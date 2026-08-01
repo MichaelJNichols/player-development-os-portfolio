@@ -1,6 +1,6 @@
 # Player Development OS
 
-**AI-assisted athlete development platform**
+**AI-assisted athlete development platform | Public product portfolio**
 
 Player Development OS is a product designed to help baseball athletes, guardians, and coaches turn long-term development goals into safe, calendar-aware daily execution.
 
