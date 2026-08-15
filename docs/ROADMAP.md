@@ -1,12 +1,12 @@
 # Product Roadmap
 
-**Public snapshot: August 1, 2026**
+**Public snapshot: August 14, 2026**
 
 This roadmap is directional and intentionally omits private implementation details, real athlete data, confidential pilot information, and exact production identifiers.
 
 ## Completed foundation
 
-- Problem definition and working single-athlete product loop
+- Working single-athlete product loop
 - Calendar-aware daily planning
 - Athlete readiness, pain, and workload controls
 - Coach planning, overrides, corrections, and retained history
@@ -16,43 +16,71 @@ This roadmap is directional and intentionally omits private implementation detai
 - Product, architecture, safety, privacy, and release documentation
 - Isolated multi-athlete staging foundation
 - Identity, guardian, coach, invitation, onboarding, and plan-generation gates
+- Deterministic rolling plan reconciliation
+- Shared assignment/logging prescriptions
+- Athlete-profile and assigned-coach presentation work
+- Release-control and pilot-gate enforcement in source
 
-## Product corrections completed August 1
+## Current stage: integrated P2 pilot readiness
 
-The product was reviewed across the private working application, public demo, and isolated staging environment. The following shared behaviors were corrected and retained as parity evidence:
+P2 has moved well beyond the initial architecture phase, but external activation remains intentionally gated.
 
-- **Safety now produces the final actionable assignment.** When required pitching rest is active, a throwing assignment resolves to a no-throw recovery day. Safe strength or mobility work can remain, while throwing tools and logging fields are removed.
-- **Assignment and logging now share one strength prescription.** Exercise list, set count, and effort rules remain consistent between the daily assignment and completed-work logger.
-- **Rolling plan reconciliation now preserves program intent.** Actual workload, readiness restrictions, team-calendar changes, displaced work, recovery sequences, and return bridges are handled through deterministic rules rather than ad hoc date shifting.
-- **Responsive navigation parity was restored.** A mobile Progress-view overlap was corrected without changing athlete records or workload logic.
+The August 14 weekly close retained approximately 49% integrated-pilot readiness. That percentage is an internal readiness indicator, not a launch forecast. Source-level controls and rendered-role infrastructure exist, while hosted Cloudflare acceptance, exact runtime/data-state evidence, cleanup evidence, support UAT, and remaining pilot gates still control activation.
 
-## Current stage: controlled multi-athlete pilot readiness
-
-The technical foundation is ahead of the prior forecast, but external activation remains gated by owner-account, migration, pilot-protocol, and legal evidence.
+No real Player 2 data or family contact is authorized from this public snapshot.
 
 ### Active gate sequence
 
-1. Verify permanent support and privacy contact paths.
-2. Establish the real platform-owner account through normal authentication and retain role-boundary and audit evidence.
-3. Complete a controlled migration rehearsal with parity, idempotency, and rollback checks.
-4. Finalize the pilot protocol and pilot register without activating an external athlete.
-5. Complete qualified legal review of guardian, minor-data, privacy, and pilot treatment.
-6. Run the weekly readiness review and activate only when every blocking gate has retained evidence.
+1. Complete hosted P2 release-control acceptance on the intended Cloudflare runtime.
+2. Capture exact Worker, database, identity, and data-state evidence for the supported journey.
+3. Complete synthetic/disposable record cleanup evidence.
+4. Finish adult-facing support/funding desktop, mobile, and fallback UAT where applicable.
+5. Close remaining athlete identity/profile integration and owner acceptance gates.
+6. Retain legal, consent, pilot-protocol, migration, entitlement, audit, and support evidence required for external activation.
+7. Activate only when every blocking gate passes; dates do not override evidence.
 
-A target date never overrides a failed safety, privacy, authorization, migration, or legal gate.
+## Recent product-development work
 
-## Near-term product work
+### Athlete and coach experience
 
-### Coach operating experience
+- Athlete-profile and assigned-coach context moved through a hosted synthetic mobile review cycle.
+- Real-device presentation defects were corrected and disposable review fixtures were removed after acceptance.
+- Multi-role rendered journeys and release-prevention controls were added to the P2 source line.
 
-- Multi-athlete roster and exception dashboard
-- Readiness and workload triage
-- Plan assignment, review, publication, and override workflows
-- Team-calendar management
-- Athlete switching and relationship-scoped navigation
-- Complete administrator audit coverage
+### Support / funding
 
-### Pilot learning
+A canonical voluntary-support experience now exists across approved adult-facing surfaces.
+
+Principles:
+
+- Stripe-hosted payment pages handle payment collection.
+- Support remains voluntary and separate from athlete entitlement or coaching access.
+- The same support model can be reused across Rogue Baseball Intelligence and approved PDOS surfaces.
+- Support must not bypass pilot, legal, identity, or authorization gates.
+
+### Public brand / product surface
+
+The Rogue Baseball Intelligence landing page has been rebuilt around the product story and tested across desktop, tablet, and real mobile devices. It now serves as the public umbrella for Player Development OS, research/scouting work, and future baseball product experiments.
+
+### Scouting Notebook
+
+A separate scouting/research product is now under active development inside the private Rogue Baseball Intelligence repository. Current work includes multi-source baseball data ingestion, refresh workflows, source diagnostics, discrepancy methodology, defense/athleticism and bat-tracking enrichment, value/WAR context, and deployment-aware static-data sharding.
+
+This work is adjacent to PDOS rather than part of the athlete-development pilot critical path.
+
+## Near-term PDOS work
+
+### Pilot readiness
+
+- Hosted P2 journey acceptance
+- Complete athlete identity/profile integration
+- Owner acceptance
+- Entitlement and audit evidence
+- Migration and rollback evidence
+- Legal and consent closeout
+- Pilot protocol and support readiness
+
+### Pilot learning after activation
 
 - Onboarding completion and abandonment
 - Daily assignment usefulness
@@ -60,14 +88,6 @@ A target date never overrides a failed safety, privacy, authorization, migration
 - Coach review and intervention frequency
 - Guardian clarity and trust
 - Support burden, failure points, and recovery time
-
-### Legal and operating readiness
-
-- Guardian and minor-response treatment
-- Support and privacy contact validation
-- Pilot consent and acknowledgment flow
-- Data-flow and provider inventory
-- Retention, deletion, incident, and escalation procedures
 
 ## Post-pilot commercialization hypotheses
 
@@ -80,9 +100,7 @@ A target date never overrides a failed safety, privacy, authorization, migration
 
 ### Equipment recommendation infrastructure — MON-003
 
-This initiative is explicitly **post-pilot** and must not delay onboarding, entitlement, migration, legal, or pilot readiness.
-
-The planned equipment library will connect products to coaching context through structured metadata such as age or level, purpose, skills trained, related drills and plans, coach notes, budget and premium alternatives, and multiple provider links.
+This initiative remains explicitly post-pilot and must not delay onboarding, entitlement, migration, legal, or pilot readiness.
 
 Product principles:
 
@@ -94,11 +112,15 @@ Product principles:
 
 ### Governed drill-video workflow
 
-A complete internal drill-video inventory and governance workflow has been documented. Public use remains contingent on rights, attribution, stable hosting, and permission-safe presentation. A limited tooling experiment may proceed only when it does not consume a critical-path pilot slot.
+The internal drill-video inventory and governance workflow remains documented. Public use is contingent on rights, attribution, stable hosting, and permission-safe presentation.
+
+## Separate portfolio experiment
+
+[Cozi Calendar for ChatGPT](https://github.com/MichaelJNichols/cozi-calendar-chatgpt) is intentionally outside the PDOS roadmap. It demonstrates a reusable integration pattern: read-only external data, deterministic availability logic, an AI-facing tool boundary, Cloudflare deployment, evaluations, and regression testing.
 
 ## Later hypotheses
 
-These are not committed features:
+These are not committed PDOS features:
 
 - Team-level products
 - Instructor or facility accounts
@@ -110,7 +132,7 @@ These are not committed features:
 
 ## Prioritization rule
 
-Work is prioritized in this order:
+PDOS work is prioritized in this order:
 
 1. Youth safety and privacy
 2. Correct access and identity boundaries
@@ -120,3 +142,5 @@ Work is prioritized in this order:
 6. Pilot learning
 7. Monetization
 8. Broader feature expansion
+
+Adjacent Rogue Baseball Intelligence experiments may proceed only when they do not weaken the evidence gates or operating discipline of the PDOS pilot path.
